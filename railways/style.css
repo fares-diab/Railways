@@ -1,0 +1,82 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    z-index: 99999;
+    margin: 5;
+    padding: 0;
+}
+
+.transparent-bg {
+    background-color: rgba(10, 10, 10, 0.4); 
+}
+
+
+@font-face {
+    font-family: 'pfont';
+    src: url('Ed\ Wood\ Movies.ttf') format('truetype');
+    color:white
+}
+
+#diffi{
+    font-family: 'pfont',sans-serif;
+    color: black;
+}
+
+h1,h2 {
+    font-family: 'pfont', sans-serif;
+    color:black;
+}
+
+#sp1 , #sp2 {
+    font-family: 'pfont', sans-serif;
+    color: black;
+}
+
+#b1 , #b2, #b3, #b4{
+    font-family: 'pfont', sans-serif;
+    color: black;
+}
+
+#rules{
+    font-family: 'pfont', sans-serif;
+    color: black;
+}
+
+table,td {
+    
+    border: 1px solid black;
+}
+
+td {
+    width: 70px;
+    height: 70px;
+}
+
+#playerName, #timeElapsed{
+    font-family: 'pfont', sans-serif;
+    color: black;
+}
+
+#playScreen table {
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+#completionMessage {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}

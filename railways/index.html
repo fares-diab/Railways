@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="halloween">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="menu" class="transparent-bg mx-auto rounded-xl overflow-hidden max-w-[700px] p-7">
+        <h1 class="text-primary-content text-8xl p-2 text-center w-full">RAILWAYS</h1>
+        <div class="flex flex-col items-end space-y-8">
+            <input type="text" placeholder="WHO ARE YOU?" class="input input-primary w-full h-12 mt-5" />
+            <div class="flex justify-between w-full space-x-4">
+                <div class="flex flex-col w-full space-y-9">
+                    <div class="border border-gray-300 rounded-lg p-4 flex flex-col items-center w-full">
+                        <p id="diffi" class="text-lg font-semibold text-center text-white-800 w-full">SET THE DIFFICULTY!</p>
+                        <div class="flex justify-center space-x-2 w-full mt-2">
+                            <div class="flex flex-col items-center">
+                                <button id="b1" class="btn btn-outline btn-accent w-40 h-20">5x5</button>
+                                <span id="sp1" class="text-gray-800 text-sm">EASY</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <button id="b2" class="btn btn-outline btn-accent w-40 h-20">7x7</button>
+                                <span id="sp2" class="text-gray-800 text-sm">HARD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col space-y-3 w-1/3">
+                    <button id="b3" class="btn btn-primary w-full h-20">RULES</button>
+                    <button id="b4" class="btn btn-secondary w-full h-20">START GAME</button>
+                </div>
+            </div>
+        </div>
+        <div id="rules" class="text-center">
+            Rails cannot be placed on an oasis, and only straight rails are allowed on bridges, while mountains can only have 90-degree rails. Each cell has two exit points, allowing the train to move into neighboring cells if correctly aligned. All necessary cells must be connected, while cells without valid track placements remain empty.
+        </div>
+    </div>
+    
+    <div id="playScreen" class="transparent-bg mx-auto rounded-xl overflow-hidden max-w-[700px] p-7">
+        <h1 class="text-primary-content text-8xl p-2 text-center w-full">RAILWAYS</h1>
+        <div class="flex flex-col items-center space-y-2 w-full mt-2">
+            <div class="flex flex-col items-center">
+                <p id="playerName">NAME: </p>
+            </div>
+            <div class="flex flex-col items-center">
+                <p id="timeElapsed">TIME ELAPSED: </p>
+            </div>
+            <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="completionMessage" class="transparent-bg mx-auto rounded-xl overflow-hidden max-w-[700px] p-7">
+        <h2 id="congrats" class="text-4xl mb-4 space-y-3"></h2>
+        <button id="close" class="btn btn-primary mt-4">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
